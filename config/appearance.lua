@@ -63,7 +63,7 @@ return {
     initial_rows = 32,
     window_padding = {
         left = 5,
-        right = 5,
+        right = 0,
         top = 12,
         bottom = 7,
     },

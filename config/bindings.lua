@@ -58,8 +58,8 @@ local keys = {
     -- tabs: navigation
     { key = '[', mods = mod.SUPER, action = act.ActivateTabRelative(-1) },
     { key = ']', mods = mod.SUPER, action = act.ActivateTabRelative(1) },
-    { key = '[', mods = 'CTRL|SHIFT', action = act.MoveTabRelative(-1) },
-    { key = ']', mods = 'CTRL|SHIFT', action = act.MoveTabRelative(1) },
+    { key = '[', mods = 'CTRL', action = act.MoveTabRelative(-1) },
+    { key = ']', mods = 'CTRL', action = act.MoveTabRelative(1) },
 
     -- window --
     -- spawn windows
