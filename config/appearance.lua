@@ -23,7 +23,7 @@ return {
 
     background = {
         {
-            source = { File = wezterm.config_dir .. '/backdrops/bg.jpg' },
+            source = { File = wezterm.GLOBAL.background },
             opacity = 0.05,
             -- brightness = 0.3,
         },
