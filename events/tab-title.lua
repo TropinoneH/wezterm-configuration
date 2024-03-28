@@ -57,6 +57,8 @@ end
 local _check_if_admin = function(p)
     if p:match('^Administrator: ') then
         return true
+    elseif p:match('^root@') then
+        return true
     end
     return false
 end
