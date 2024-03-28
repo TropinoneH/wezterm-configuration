@@ -109,7 +109,7 @@ local keys = {
     {
         key = 'p',
         mods = mod.SUPER,
-        action = act.PaneSelect({ alphabet = '1234567890', mode = 'SwapWithActiveKeepFocus' }),
+        action = act.PaneSelect({ alphabet = '1234567890', mode = 'Activate' }),
     },
 
     -- resize panes

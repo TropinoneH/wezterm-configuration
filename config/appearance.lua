@@ -65,12 +65,12 @@ return {
         left = 5,
         right = 0,
         top = 12,
-        bottom = 7,
+        bottom = 5,
     },
     window_close_confirmation = 'AlwaysPrompt',
     window_frame = {
         active_titlebar_bg = '#0F2536',
         inactive_titlebar_bg = '#0F2536',
     },
-    inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
+    inactive_pane_hsb = { saturation = 1.0, brightness = 0.5 },
 }
