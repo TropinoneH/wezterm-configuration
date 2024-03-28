@@ -24,6 +24,8 @@ return {
     background = {
         {
             source = { File = wezterm.config_dir .. '/backdrops/bg.jpg' },
+            opacity = 0.05,
+            -- brightness = 0.3,
         },
         {
             source = { Color = '#040938' },
