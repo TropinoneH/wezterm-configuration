@@ -6,14 +6,14 @@ local options = {
 }
 
 if platform.is_win then
-    options.default_prog = { 'powershell' }
+    options.default_prog = { 'D:\\apps\\Git\\bin\\bash.exe' }
     options.launch_menu = {
         { label = 'PowerShell Core', args = { 'pwsh' } },
         { label = 'PowerShell Desktop', args = { 'powershell' } },
         { label = 'Command Prompt', args = { 'cmd' } },
         {
             label = 'Git Bash',
-            args = { 'D:\\apps\\git\\current\\bin\\bash.exe' },
+            args = { "D:\\apps\\Git\\bin\\bash.exe" },
         },
     }
 elseif platform.is_mac then
