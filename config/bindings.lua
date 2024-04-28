@@ -12,8 +12,8 @@ elseif platform.is_win then
     mod.SUPER = 'ALT'
     mod.SUPER_REV = 'ALT|CTRL'
 elseif platform.is_linux then
-    mod.SUPER = 'ALT'
-    mod.SUPER_REV = 'ALT|CTRL'
+    mod.SUPER = 'CTRL'
+    mod.SUPER_REV = 'CTRL|ALT'
 end
 
 local keys = {
@@ -28,7 +28,7 @@ local keys = {
     },
     -- toggle fullscreen
     { key = 'F11', mods = 'NONE', action = act.ToggleFullScreen },
-    { key = 'F12', mods = 'NONE', action = act.ShowDebugOverlay },
+    { key = 'F12', mods = mod.SUPER, action = act.ShowDebugOverlay },
     { key = 'f', mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = '' }) },
     {
         key = 'u',
@@ -47,8 +47,8 @@ local keys = {
     },
 
     -- copy/paste --
-    { key = 'c', mods = 'CTRL|SHIFT', action = act.CopyTo('Clipboard') },
-    { key = 'v', mods = 'CTRL|SHIFT', action = act.PasteFrom('Clipboard') },
+    { key = 'c', mods = mod.SUPER_REV, action = act.CopyTo('Clipboard') },
+    { key = 'v', mods = mod.SUPER_REV, action = act.PasteFrom('Clipboard') },
 
     -- tabs --
     -- tabs: spawn+close
@@ -58,12 +58,12 @@ local keys = {
     -- tabs: navigation
     { key = '[', mods = mod.SUPER, action = act.ActivateTabRelative(-1) },
     { key = ']', mods = mod.SUPER, action = act.ActivateTabRelative(1) },
-    { key = '[', mods = 'CTRL', action = act.MoveTabRelative(-1) },
-    { key = ']', mods = 'CTRL', action = act.MoveTabRelative(1) },
+    { key = '[', mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
+    { key = ']', mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
 
     -- window --
     -- spawn windows
-    { key = 'n', mods = mod.SUPER, action = act.SpawnWindow },
+    { key = 'n', mods = mod.SUPER_REV, action = act.SpawnWindow },
 
     -- background controls --
     {
@@ -92,12 +92,12 @@ local keys = {
     -- panes: split panes
     {
         key = [[/]],
-        mods = mod.SUPER,
+        mods = mod.SUPER_REV,
         action = act.SplitVertical({ domain = 'CurrentPaneDomain' }),
     },
     {
         key = [[\]],
-        mods = mod.SUPER,
+        mods = mod.SUPER_REV,
         action = act.SplitHorizontal({ domain = 'CurrentPaneDomain' }),
     },
 
@@ -139,7 +139,7 @@ local mouse_bindings = {
     -- Ctrl-click will open the link under the mouse cursor
     {
         event = { Up = { streak = 1, button = 'Left' } },
-        mods = 'CTRL',
+        mods = mod.SUPER,
         action = act.OpenLinkAtMouseCursor,
     },
 }
