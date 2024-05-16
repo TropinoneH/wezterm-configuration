@@ -34,7 +34,7 @@ below is the keybindings.
 | <kbd>F3</kbd>          | open launch panel           |
 | <kbd>F4</kbd>          | search and change tab       |
 | <kbd>F5</kbd>          | search and change workspace |
-| <kbd>F11</kbd>         | full screen                 |
+| Super + <kbd>F11</kbd> | full screen                 |
 | Super + <kbd>F12</kbd> | Toggle Markdown Preview     |
 | Super + <kbd>f</kbd>   | search in current buffer    |
 | Super + <kbd>u</kbd>   | open hyper-link             |
@@ -60,10 +60,10 @@ use `SuperRev + <kbd>p</kbd>` to start resize mode.
 
 in resize mode:
 
-| key                            | function                 |
-| ------------------------------ | ------------------------ |
-| <kbd>UpArrow</kbd>             | add 1 of up direction    |
-| <kbd>DownArrow</kbd>           | add 1 of down direction  |
-| <kbd>LeftArrow</kbd>           | add 1 of left direction  |
-| <kbd>RightArrow</kbd>          | add 1 of right direction |
-| <kbd>q</kbd> or <kbd>Esc</kbd> | quit resize mode         |
+| key                   | function                 |
+| --------------------- | ------------------------ |
+| <kbd>UpArrow</kbd>    | add 1 of up direction    |
+| <kbd>DownArrow</kbd>  | add 1 of down direction  |
+| <kbd>LeftArrow</kbd>  | add 1 of left direction  |
+| <kbd>RightArrow</kbd> | add 1 of right direction |
+| <kbd>q</kbd>          | quit resize mode         |

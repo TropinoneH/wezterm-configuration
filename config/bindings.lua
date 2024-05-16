@@ -27,7 +27,7 @@ local keys = {
         action = act.ShowLauncherArgs({ flags = 'FUZZY|WORKSPACES' }),
     },
     -- toggle fullscreen
-    { key = 'F11', mods = 'NONE', action = act.ToggleFullScreen },
+    { key = 'F11', mods = mod.SUPER, action = act.ToggleFullScreen },
     { key = 'F12', mods = mod.SUPER, action = act.ShowDebugOverlay },
     { key = 'f', mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = '' }) },
     {
