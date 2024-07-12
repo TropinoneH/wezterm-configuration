@@ -9,8 +9,8 @@ if platform.is_mac then
     mod.SUPER = "SUPER"
     mod.SUPER_REV = "SUPER|CTRL"
 elseif platform.is_win then
-    mod.SUPER = "CTRL"
-    mod.SUPER_REV = "CTRL|ALT"
+    mod.SUPER = "ALT"
+    mod.SUPER_REV = "ALT|CTRL"
 elseif platform.is_linux then
     mod.SUPER = "CTRL"
     mod.SUPER_REV = "CTRL|ALT"
