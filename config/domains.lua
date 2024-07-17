@@ -10,7 +10,7 @@ return {
             -- identifies the host:port pair of the remote server
             -- Can be a DNS name or an IP address with an optional
             -- ":port" on the end.
-            remote_address = "10.19.126.149:10008",
+            remote_address = "10.19.127.183:10008",
 
             -- Whether agent auth should be disabled.
             -- Set to true to disable it.
