@@ -1,6 +1,8 @@
 local Config = require("config")
 
--- require("utils.backdrops"):set_files():random()
+if not require("utils.platform")().is_linux then
+    require("utils.backdrops"):set_files():random()
+end
 
 require("events.right-status").setup()
 require("events.tab-title").setup()

@@ -16,7 +16,7 @@ local bg = {
 
 if not is_linux then
     initial_cols = 120
-    initial_rows = 23
+    initial_rows = 32
     bg = {
         {
             source = { File = wezterm.GLOBAL.background },
@@ -55,8 +55,7 @@ return {
     background = bg,
 
     -- scrollbar
-    -- enable_scroll_bar = true,
-    -- min_scroll_bar_height = "3cell",
+    enable_scroll_bar = not is_linux,
 
     -- tab bar
     enable_tab_bar = true,
@@ -78,10 +77,8 @@ return {
     integrated_title_button_style = "Windows",
     integrated_title_button_color = "auto",
     integrated_title_button_alignment = "Right",
-    -- initial_cols = is_linux and nil or 120,
     initial_cols = initial_cols,
     initial_rows = initial_rows,
-    -- initial_rows = is_linux and nil or 32,
     window_padding = {
         left = 5,
         right = 0,
